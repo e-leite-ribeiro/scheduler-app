@@ -23,7 +23,7 @@ A simple Python application that reads events from a CSV file and adds them to a
 
 ## Project Structure
 
-credentials, data and .env file should be provided by the user
+credentials, data and .env file should be provided by the user. Check the .env.example file for the necessary data please.
 
 ```bash
 .
@@ -40,13 +40,6 @@ credentials, data and .env file should be provided by the user
 └── .env
 ```
 
-## Environment Variables (`.env`)
-
-GOOGLE_APPLICATION_CREDENTIALS=/credentials/credentials.json
-CSV_PATH=/data/schedule.csv
-TIMEZONE=<your-timezone>
-CALENDAR_ID=<your-calendar-id>
-
 ## CSV Format
 
 The CSV file must have the following columns:
@@ -55,8 +48,9 @@ The CSV file must have the following columns:
 
 **Example:**
 
-Technical Interview,2026-02-04T16:00:00,2026-02-04T16:30:00,Discuss project,GoogleMeet
-Gym,2026-02-04T18:00:00,2026-02-04T19:00:00,Training,Gym
+Technical Interview,2026-01-04T16:00:00,2026-01-04T16:30:00,Discuss project,GoogleMeet
+Gym,2026-01-04T18:00:00,2026-01-04T19:00:00,Training,Gym
+Doctor apointment,2026-01-04T20:00:00,2026-01-04T20:30:00
 
 - Dates must be in **ISO 8601 format** (`YYYY-MM-DDTHH:MM:SS`)
 - `start` and `end` must include time; timezone is handled separately via `TIMEZONE`.
