@@ -42,13 +42,14 @@ credentials, data and .env file should be provided by the user. Check the .env.e
 
 ## CSV Format
 
-The CSV file must have the following columns:
+The CSV file must have the following columns (description and location are optional):
 
 `summary,start,end,description,location`
 
 **Example:**
 
 ```csv
+summary,start,end,description,location
 Technical Interview,2026-01-04T16:00:00,2026-01-04T16:30:00,Discuss project,GoogleMeet
 Gym,2026-01-04T18:00:00,2026-01-04T19:00:00,Training,Gym
 Doctor apointment,2026-01-04T20:00:00,2026-01-04T20:30:00
