@@ -3,7 +3,7 @@ version: '3.9'
 services:
     scheduler:
         build: .
-        container_name: scheduling-app
+        container_name: scheduler-app
         env_file:
             - .env
         volumes:

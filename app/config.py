@@ -3,4 +3,4 @@ import os
 CSV_PATH= os.environ["CSV_PATH"]
 TIMEZONE= os.environ.get("TIMEZONE", "UTC")
 GOOGLE_APPLICATION_CREDENTIALS = os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
-CALENDAR_ID = os.environ["CALENDAR_ID"]
+CALENDAR_ID = os.environ.get("CALENDAR_ID", "primary")

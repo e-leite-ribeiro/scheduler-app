@@ -14,14 +14,14 @@ service = build("calendar", "v3", credentials=credentials)
 
 try:
     df = pd.read_csv(CSV_PATH)
-except:
+except FileNotFoundError:
     print(f".csv not found at {CSV_PATH}")
     exit(1)
 
 
 required_columns = {"summary", "start", "end"}
 if not required_columns.issubset(df.columns):
-    print(f".csv must have colums {required_columns}")
+    print(f".csv must have columns {required_columns}")
     exit(1)
 
 for _, row in df.iterrows():

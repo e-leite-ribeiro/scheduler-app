@@ -1,4 +1,4 @@
-# Scheduling App
+# Scheduler App
 
 A simple Python application that reads events from a CSV file and adds them to a Google Calendar. Dockerized for easy deployment.
 
@@ -52,7 +52,7 @@ The CSV file must have the following columns (description and location are optio
 summary,start,end,description,location
 Technical Interview,2026-01-04T16:00:00,2026-01-04T16:30:00,Discuss project,GoogleMeet
 Gym,2026-01-04T18:00:00,2026-01-04T19:00:00,Training,Gym
-Doctor apointment,2026-01-04T20:00:00,2026-01-04T20:30:00
+Doctor appointment,2026-01-04T20:00:00,2026-01-04T20:30:00
 ```
 
 - Dates must be in **ISO 8601 format** (`YYYY-MM-DDTHH:MM:SS`)
