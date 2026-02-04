@@ -1,0 +1,28 @@
+# --- Secrets / credentials ---
+.env
+credentials/
+credentials.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# --- Docker ---
+*.log
+
+# Optional: local-only override files
+docker-compose.override.yml
+
+# --- Data ---
+data/*.csv
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
